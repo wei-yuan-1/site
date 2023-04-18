@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Number Generator</title>
+	<link rel="stylesheet" type="text/css" href="global.css">
+	<link rel="stylesheet" type="text/css" href="generator.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Number Generator</h1>
+		<form>
+			<label for="min">Minimum number:</label>
+			<input type="number" id="min" name="min" min="1" required>
+			<label for="max">Maximum number:</label>
+			<input type="number" id="max" name="max" min="1" required>
+			<label for="exclude">Exclude numbers:</label>
+			<input type="text" id="exclude" name="exclude">
+			<div class="toggle-container">
+				<label for="no-repeat">No repeat:</label>
+				<div class="toggle">
+					<input type="checkbox" id="no-repeat" name="no-repeat">
+					<label for="no-repeat" class="toggle-switch"></label>
+				</div>
+			</div>
+			<button type="button" id="generate">Generate</button>
+		</form>
+		<div id="output"></div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>

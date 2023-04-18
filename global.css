@@ -1,0 +1,34 @@
+/* import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+@font-face {
+  font-family: Agrandir Grand Heavy;
+  src: url(https://api.cloudinary.com/v1_1/dezruxcgh/raw/download?api_key=388983588977563&attachment=true&audit_context=eyJhY3Rvcl90eXBlIjoidXNlciIsImFjdG9yX2lkIjoiNjkxZTYwYTQ2N2Q2NWY3MzdjMGUzYmZkN2JjZDY0ZDMiLCJ1c2VyX2V4dGVybmFsX2lkIjoiOTU1NTcyY2UwOGJjNGU5N2JlNzcwN2RiMGFjYThmIiwidXNlcl9jdXN0b21faWQiOiJuZ193ZWlfeXVhbkBzdHVkZW50cy5lZHUuc2ciLCJjb21wb25lbnQiOiJjb25zb2xlIn0%3D&public_id=Agrandir-GrandHeavy_jexzuj.otf&signature=e2f9ec15882006ff53c60509515163efeba19d79&source=ml&target_filename=Agrandir-GrandHeavy_jexzuj.otf&timestamp=1674812340&type=upload);
+}
+/* end  */
+
+h1, h2, h3{font-size: 45px;text-align: center;margin: 50px auto;font-family: Righteous, sans-serif;color: #ff8482;}
+
+body{
+  background-color: #fcf4d7;
+}
+
+.btn {
+  height: 100px;
+  font-size: 37.5px;
+  font-family: Agrandir Grand Heavy, sans-serif;
+  font-weight: 400;
+  border-radius: 30px;
+  border: 0px;
+  width: 500px;
+  background-color: #c3d6a7;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition: background-color 200ms linear;
+}
+
+.btn:hover{
+  background-color: #9f9fa8
+}
