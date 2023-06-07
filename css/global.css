@@ -1,22 +1,51 @@
-/* import fonts */
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+/* Importing Fonts */
 
-@font-face {
-  font-family: Agrandir Grand Heavy;
-  src: url(https://api.cloudinary.com/v1_1/dezruxcgh/raw/download?api_key=388983588977563&attachment=true&audit_context=eyJhY3Rvcl90eXBlIjoidXNlciIsImFjdG9yX2lkIjoiNjkxZTYwYTQ2N2Q2NWY3MzdjMGUzYmZkN2JjZDY0ZDMiLCJ1c2VyX2V4dGVybmFsX2lkIjoiOTU1NTcyY2UwOGJjNGU5N2JlNzcwN2RiMGFjYThmIiwidXNlcl9jdXN0b21faWQiOiJuZ193ZWlfeXVhbkBzdHVkZW50cy5lZHUuc2ciLCJjb21wb25lbnQiOiJjb25zb2xlIn0%3D&public_id=Agrandir-GrandHeavy_jexzuj.otf&signature=e2f9ec15882006ff53c60509515163efeba19d79&source=ml&target_filename=Agrandir-GrandHeavy_jexzuj.otf&timestamp=1674812340&type=upload);
+/* Exo (Sans Serif for h1 to h4) */
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Poppins (Sans Serif for paragraphs and h5 to h6 */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* End  */
+
+/* Variables */
+:root {
+  --main-font-family: "Exo", sans-serif;
+  --secondary-font-family: "Poppins", sans-serif;
+  --normal-font: 400;
+  --bold-font: 700;
+  --bolder-font: 900;
+  --bg-color: #fcfcfc;
+  --primary-color: #4756df;
+  --secondary-color: #ff7235;
 }
-/* end  */
+/* Variables end */
 
-h1, h2, h3{font-size: 45px;text-align: center;margin: 50px auto;font-family: Righteous, sans-serif;color: #ff8482;}
+/* scroll behaviors */
+html {
+  scroll-behavior: smooth;
+}
+/* end */
 
-body{
-  background-color: #fcf4d7;
+/* hyperlinks */
+a {
+  color: #000058;
+  text-decoration: none;
+  transition: 0.69s;
 }
 
-.btn {
+a:hover {
+  color: #842ac4;
+  text-decoration: none;
+}
+
+/* hyperlinks styles end */
+
+/* style 1 buttons */
+.btn1 {
   height: 100px;
   font-size: 37.5px;
-  font-family: Agrandir Grand Heavy, sans-serif;
+  font-family: var(--secondary-font-family);
   font-weight: 400;
   border-radius: 30px;
   border: 0px;
@@ -29,6 +58,19 @@ body{
   transition: background-color 200ms linear;
 }
 
-.btn:hover{
-  background-color: #9f9fa8
+.btn:hover {
+  background-color: #9f9fa8;
+}
+
+/* style 1 buttons end */
+
+/* style 2 buttons */
+
+/* style 2 buttons end */
+
+/* footer */
+.footer-text {
+  font-family: var(--secondary-font-family);
+  text-align: center;
+  font-weight: 600;
 }
