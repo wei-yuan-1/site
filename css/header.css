@@ -3,6 +3,19 @@
 
 /* End  */
 
+/* hyperlinks */
+a {
+  color: #000058;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+a:hover {
+  color: #3b3b3b;
+  text-decoration: none;
+}
+/* end */
+
 /* Nav Bar */
 body {
   padding: 0;
@@ -61,7 +74,7 @@ nav .links li {
 nav .links a {
   display: block;
   padding: 1em;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
   color: #ffffff;
   text-decoration: none;

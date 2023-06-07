@@ -27,20 +27,6 @@ html {
 }
 /* end */
 
-/* hyperlinks */
-a {
-  color: #000058;
-  text-decoration: none;
-  transition: 0.69s;
-}
-
-a:hover {
-  color: #842ac4;
-  text-decoration: none;
-}
-
-/* hyperlinks styles end */
-
 /* style 1 buttons */
 .btn1 {
   height: 100px;
