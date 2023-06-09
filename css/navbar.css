@@ -44,7 +44,7 @@ nav {
   padding: 0 5%;
 }
 
-nav .logo {
+nav .name-text {
   float: left;
   width: 40%;
   height: 100%;
@@ -127,7 +127,7 @@ nav .icon-burger .line {
 }
 
 @media screen and (max-width: 768px) {
-  nav .logo {
+  nav .name-text {
     float: none;
     width: auto;
     justify-content: center;
