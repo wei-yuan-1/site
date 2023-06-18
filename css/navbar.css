@@ -4,33 +4,19 @@
 /* End  */
 
 /* hyperlinks */
-a {
-  color: #000058;
+.name-text a {
+  color: #dcf2ff;
   text-decoration: none;
   transition: 0.5s;
 }
 
-a:hover {
+.name-text a:hover {
   color: #3b3b3b;
   text-decoration: none;
 }
 /* end */
 
 /* Nav Bar */
-body {
-  padding: 0;
-  margin: 0;
-}
-
-.container {
-  position: relative;
-  margin-top: 100px;
-}
-
-.container img {
-  display: block;
-  width: 100%;
-}
 
 nav {
   position: sticky;
@@ -40,8 +26,11 @@ nav {
   top: 0;
   font-family: "Exo", "sans-serif";
   height: 100px;
-  background-color: #c9bc95;
+  background-color: #1a1a1a;
   padding: 0 5%;
+  width: 90%;
+  margin: 30px auto;
+  border-radius: 15px;
 }
 
 nav .name-text {
@@ -145,7 +134,10 @@ nav .icon-burger .line {
     height: auto;
     flex-direction: column;
     justify-content: space-evenly;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #3b3b3b;
+    border-radius: 15px;
+    width: 90%;
+    margin: 60px auto;
     overflow: hidden;
     transition: all 0.5s ease-in-out;
   }

@@ -3,7 +3,7 @@
 - the best website ever
 - still work in progress
 - 3% complete
-- random giy who is obsessed with design
+- random guy who is obsessed with design
 - loves the following fonts:
   - Montserrat
   - Exo
