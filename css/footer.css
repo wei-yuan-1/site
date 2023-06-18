@@ -13,7 +13,7 @@ body {
 }
 
 footer {
-  background-color: #ebebeb;
+  background-color: #f3e9d3;
   margin-top: 100px;
   width: 90%;
   min-height: 100px;
@@ -29,7 +29,7 @@ footer {
 }
 
 footer p {
-  color: #4d4d4d;
+  color: #41474b;
   margin-bottom: 40px;
   font-size: 30px;
   font-weight: 800;
@@ -39,17 +39,18 @@ footer p {
 .to-top {
   margin-left: auto;
   margin-right: auto;
-  background-color: #37374b;
-  color: #fff;
+  background-color: #6e6969;
+  color: #ebebd4;
   text-decoration: none;
-  transition: linear 0.69s;
+  transition: linear 0.5s;
   font-size: 25px;
   font-weight: 600;
   padding: 10px 25px;
   border-radius: 10px;
+  border: 0px;
 }
 
 .to-top:hover {
-  background-color: #000000;
   border-radius: 20px;
+  background: #4b5455;
 }
