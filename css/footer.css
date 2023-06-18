@@ -15,7 +15,7 @@ body {
 footer {
   background-color: #ebebeb;
   margin-top: 100px;
-  width: 50%;
+  width: 90%;
   min-height: 100px;
   padding: 50px 0px;
   display: flex;
@@ -25,7 +25,7 @@ footer {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  border-radius: 50px;
+  border-radius: 15px;
 }
 
 footer p {
