@@ -25,9 +25,9 @@
       <input type="checkbox" id="nav-toggle" />
       <div class="name-text no-selection"><a href="/">WEI YUAN NG</a></div>
       <ul class="links no-selection">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
+        <li class="menu-items"><a href="#about">About</a></li>
+        <li class="menu-items"><a href="#skills">Skills</a></li>
+        <li class="menu-items"><a href="#projects">Projects</a></li>
       </ul>
       <label for="nav-toggle" class="icon-burger">
         <div class="line"></div>
@@ -35,6 +35,8 @@
         <div class="line"></div>
       </label>
     </nav>
+
+    <!-- ABOUT SECTION -->
 
     <main>
       <section id="about">
@@ -47,32 +49,68 @@
           photo/video editing.
         </p>
       </section>
+
+      <!-- SKILLS SECTION -->
+      <section id="skills" class="skills-section">
+        <h2>Skills</h2>
+        <div class="text">I am proficient in the following skills</div>
+
+        <div class="skill-containers no-selection">
+          <div class="cell">
+            <img src="images/html-logo.webp" alt="html logo" />
+            <span>HTML</span>
+          </div>
+
+          <div class="cell">
+            <img src="images/css-logo.webp" alt="css logo" />
+            <span>CSS</span>
+          </div>
+
+          <div class="cell">
+            <img src="images/javascript-logo.webp" alt="javascript logo" />
+            <span>JavaScript</span>
+          </div>
+
+          <div class="cell">
+            <img src="images/python-logo.webp" alt="python logo" />
+            <span>Python</span>
+          </div>
+
+          <div class="cell">
+            <img src="images/node-logo.webp" alt="nodejs logo" />
+            <span>Node.js</span>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <!-- PROJECTS -->
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-container">
+        <a class="project-card" href="/the-mysterious-number.html">
+          <div class="project-container">
+            <img
+              src="images/guessing-game.png"
+              alt="guessing game"
+              class="project-pic"
+            />
+            <h3 class="project-title">The Mysterious Number</h3>
+            <p class="project-details">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+              ratione vel inventore labore commodi modi quos culpa aut saepe!
+              Alias!
+            </p>
+          </div>
+        </a>
+      </div>
+    </section>
 
     <!-- Footer section -->
     <footer>
       <p class="no-selection">Built by Wei Yuan Ng</p>
-      <div>
-        <button class="to-top no-selection">Back to Top</button>
-      </div>
     </footer>
-
-    <script>
-      window.addEventListener("scroll", function () {
-        var toTopBtn = document.querySelector(".to-top");
-
-        if (window.pageYOffset > 100) {
-          toTopBtn.style.display = "block";
-        } else {
-          toTopBtn.style.display = "none";
-        }
-      });
-
-      document.querySelector(".to-top").addEventListener("click", function (e) {
-        e.preventDefault();
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      });
-    </script>
 
     <!-- Website scripts -->
     <script src="js/index.js"></script>

@@ -8,22 +8,22 @@
 
 /* End  */
 
-/* Variables */
-:root {
-  --main-font-family: "Exo", sans-serif;
-  --secondary-font-family: "Poppins", sans-serif;
-  --normal-font: 400;
-  --bold-font: 700;
-  --bolder-font: 900;
-  --bg-color: #fcfcfc;
-  --primary-color: #292b44;
-  --secondary-color: #cac160;
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-/* Variables end */
+
+body {
+  flex-direction: column;
+  display: flex;
+  min-height: 100vh;
+}
 
 /* scroll behaviors */
 html {
   scroll-behavior: smooth;
+  background-color: var(--bg-color);
 }
 /* end */
 
@@ -38,6 +38,7 @@ html {
   width: 40%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 175px;
 }
 
 #about h1 {
@@ -56,4 +57,118 @@ html {
   #about {
     width: 60%;
   }
+}
+
+#skills {
+  padding: 0 50px;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+#skills .text {
+  margin-top: 10px;
+  font-size: 25px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#skills h2 {
+  text-align: center;
+  font-size: 35px;
+}
+
+#skills .skill-containers {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#skills .skill-containers .cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  width: 200px;
+  padding: 10px 20px;
+  margin: 15px 20px;
+  border: 1.5px solid #d3d3d3;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+#skills .skill-containers .cell:hover {
+  transform: scale(1.15);
+}
+
+#skills .skill-containers .cell img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  border-radius: 2px;
+}
+
+#skills .skill-containers .cell span {
+  font-size: 18px;
+}
+
+#projects {
+  padding: 32px 0;
+  margin-top: 2rem;
+}
+
+.project-pic {
+  width: 65%;
+  height: 60%;
+  border-radius: 15px;
+  margin-bottom: 25px;
+}
+
+.projects-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#projects h2 {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 35px;
+}
+
+.project-container {
+  text-align: center;
+  width: 21.875rem;
+  padding: 1rem;
+}
+
+.project-container p {
+  padding: 0.4rem;
+}
+
+.project-title {
+  margin-bottom: var(--bottom-margin);
+}
+
+.project-details {
+  margin-bottom: var(--bottom-margin);
+}
+
+.project-card {
+  border-radius: 11px;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid black;
+  text-decoration: none;
+}
+
+.project-card,
+.project-card:visited {
+  color: inherit;
+  transition: 0.6s ease-in-out;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
 }
