@@ -44,6 +44,11 @@ html {
   width: 100%;
 }
 
+h2 {
+  font-family: "Exo", sans-serif;
+  font-weight: 800;
+}
+
 #about {
   width: 40%;
   margin-left: auto;
@@ -123,16 +128,15 @@ html {
 }
 
 #projects {
-  padding: 32px 0;
+  padding: 2rem 0;
   margin-top: 2rem;
-  max-width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
 
 .project-pic {
-  width: 65%;
-  height: 60%;
+  width: 100%;
+  height: auto;
   border-radius: 15px;
   margin-bottom: 25px;
 }
@@ -141,6 +145,9 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #projects h2 {
@@ -151,8 +158,9 @@ html {
 
 .project-container {
   text-align: center;
-  width: 21.875rem;
+  width: 17.5rem;
   padding: 1rem;
+  margin-bottom: 1rem; /* Set the desired bottom margin */
 }
 
 .project-container p {
@@ -160,17 +168,17 @@ html {
 }
 
 .project-title {
-  margin-bottom: var(--bottom-margin);
+  margin-bottom: 1rem; /* Set the desired bottom margin */
 }
 
 .project-details {
-  margin-bottom: var(--bottom-margin);
+  margin-bottom: 1rem; /* Set the desired bottom margin */
 }
 
 .project-card {
   border-radius: 11px;
   padding: 20px;
-  margin: 10px;
+  margin: 10px auto;
   border: 1px solid black;
   text-decoration: none;
 }
@@ -183,4 +191,20 @@ html {
 
 .project-card:hover {
   transform: scale(1.05);
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+  .projects-container {
+    flex-direction: column;
+  }
+
+  .project-pic {
+    width: 100%;
+  }
+
+  .project-container {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
 }
