@@ -35,7 +35,12 @@ html {
 }
 
 .before-sections {
-  height: 200px;
+  height: 75px;
+  width: 100%;
+}
+
+.before-section {
+  height: 175px;
   width: 100%;
 }
 
