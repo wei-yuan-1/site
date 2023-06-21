@@ -16,7 +16,7 @@
         font-family: "Poppins", sans-serif;
         margin-top: 100px;
         background: linear-gradient(-45deg, #fdf3ef, #cae7e7, #d9dcee, #cff1e8);
-        background-size: 400% 400%;
+        background-size: 400vh 400vh;
       }
       .title {
         font-weight: 700;
@@ -58,13 +58,6 @@
         color: white;
       }
 
-      #setupMessage,
-      #resultMessage {
-        font-size: 22.5px;
-        font-weight: 600;
-        margin-top: 30px;
-      }
-
       /* Remove input box arrows for Chrome, Safari, Edge, Opera */
       input::-webkit-outer-spin-button,
       input::-webkit-inner-spin-button {
@@ -72,10 +65,21 @@
         margin: 0;
       }
 
-      .setupMessage,
-      .resultMessage {
+      #setupMessage,
+      #resultMessage {
         font-size: 30px;
-        font-weight: 500;
+        font-weight: 600;
+        margin-top: 30px;
+        margin-left: 17.5px;
+        margin-right: 17.5px;
+      }
+
+      #setupMessage {
+        color: rgb(145, 36, 36);
+      }
+
+      #resultMessage {
+        color: rgb(69, 69, 69);
       }
 
       input {
@@ -84,6 +88,10 @@
 
       .gameStart {
         margin-top: 40px;
+      }
+
+      .restartGame {
+        margin-top: 100px;
       }
     </style>
   </head>
@@ -122,12 +130,12 @@
 
       <div id="gamePlay" style="display: none">
         <p class="instructions">Guess a number within the range:</p>
-        <input class="gameInput" type="text" id="guessInput" />
+        <input class="gameInput" type="number" id="guessInput" />
         <p id="checkGuess" class="gameBtns" onclick="checkGuess()">
           Check Number
         </p>
-        <p id="resultMessage"></p>
-        <p class="gameBtns" onclick="restartGame()">Restart Game</p>
+        <p class="resultMessage" id="resultMessage"></p>
+        <p class="gameBtns restartGame" onclick="restartGame()">Restart Game</p>
       </div>
     </div>
 
@@ -150,6 +158,11 @@
           return;
         }
 
+        if (isNaN(noOfReqAttempts)) {
+          setupMessage.textContent =
+            "Please enter a valid number of attempts you wish to have.";
+        }
+
         if (minRange >= maxRange) {
           setupMessage.textContent =
             "The maximum range value must be greater than the minimum range value.";
@@ -162,8 +175,29 @@
           return;
         }
 
+        const maxAllowedAttempts = Math.ceil((maxRange - minRange) / 2);
+
+        if (noOfReqAttempts > maxAllowedAttempts) {
+          setupMessage.textContent = `The maximum allowed attempts for this range is ${maxAllowedAttempts}. Please choose a lower number of attempts.`;
+          return;
+        }
+
         randomNumber =
           Math.floor(Math.random() * (maxRange - minRange + 1)) + minRange;
+        console.log(`bjvisdsfdfrwofdgifbfodfsddiohiodfioffbiofsdvb`);
+        console.log(`ihgygygyyinnnnnnnnnnnnnnnnkjihyfyufui`);
+        console.log(`gugkgufthdthtdhd`);
+        console.log(`tftftfkluuu`);
+        console.log(
+          `jjjibidgh${randomNumber}fghisjjijijdfijffijijgisfdtbvzcvkudigjijsidgjifsijdifjifsj`
+        );
+        console.log(`uhuhugufuiklilsiuuuuuihggiuiiohu`);
+        console.log(`ihlkujuhbjkhihihihuuhiuhuh`);
+        console.log(`ihhhhhhhhooooooooooogggggggggggyyyyyyyyyyddddddddy`);
+        console.log(
+          `gygvdoghhgfdshsufhcdsfhihicsdhcuihciushcfuduhidcscfhufcsdifhuifsf`
+        );
+
         attempts = noOfReqAttempts;
         document.getElementById("gameSetup").style.display = "none";
         document.getElementById("gamePlay").style.display = "block";
@@ -171,6 +205,7 @@
         document.getElementById("resultMessage").textContent = "";
         document.getElementById("guessInput").value = "";
         document.getElementById("guessInput").disabled = false;
+        document.getElementById("guessInput").style.display = "block";
         document.getElementById("guessInput").focus();
       }
 
@@ -181,6 +216,7 @@
         const userGuess = parseInt(guessInput.value);
         if (isNaN(userGuess)) {
           resultMessage.textContent = "Invalid input. Please enter a number.";
+          resultMessage.style.color = "rgb(145, 36, 36)";
         } else {
           const minRange = parseInt(
             document.getElementById("minRangeInput").value
@@ -192,25 +228,27 @@
           if (userGuess < minRange || userGuess > maxRange) {
             resultMessage.textContent =
               "The number is not within the specified range.";
-            return;
-          }
-
-          if (userGuess === randomNumber) {
+            resultMessage.style.color = "rgb(145, 36, 36)";
+          } else if (userGuess === randomNumber) {
             resultMessage.textContent =
-              "Congratulations! Your guess is correct!";
+              "Congratulations! Your guess is correct! 🎉";
+            resultMessage.style.color = "#047540";
             document.getElementById("checkGuess").style.display = "none";
-            guessInput.disabled = true;
+            guessInput.style.display = "none";
           } else {
             attempts--;
 
             if (attempts === 0) {
               resultMessage.textContent = `Game over! The number was ${randomNumber}.`;
+              resultMessage.style.color = "#9c7b06";
               document.getElementById("checkGuess").style.display = "none";
-              guessInput.disabled = true;
+              guessInput.style.display = "none";
             } else if (userGuess > randomNumber) {
               resultMessage.textContent = `Wrong guess! Try a lower number. Remaining attempts: ${attempts}`;
+              resultMessage.style.color = "#cc7e78";
             } else {
               resultMessage.textContent = `Wrong guess! Try a higher number. Remaining attempts: ${attempts}`;
+              resultMessage.style.color = "#cc7e78";
             }
           }
         }
