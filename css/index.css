@@ -27,13 +27,6 @@ html {
 }
 /* end */
 
-/* disable selection */
-.no-selection {
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
 .before-sections {
   height: 75px;
   width: 100%;
