@@ -26,11 +26,11 @@ html {
   background: linear-gradient(
     -45deg,
     rgb(255, 247, 247),
-    rgb(243, 252, 243),
-    rgb(246, 253, 255),
-    rgb(255, 255, 247)
+    rgb(238, 253, 238),
+    rgb(236, 251, 255),
+    rgb(252, 252, 227)
   );
-  background-size: 400% 400%;
+  background-size: 1000% 1000%;
   animation: animate 5s ease infinite;
   width: 100%;
   height: 100vh;
@@ -161,8 +161,7 @@ h2 {
   align-items: center;
   justify-content: center;
   max-width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 30px auto;
 }
 
 #projects h2 {
@@ -173,9 +172,9 @@ h2 {
 
 .project-container {
   text-align: center;
-  width: 17.5rem;
+  width: 500px;
   padding: 1rem;
-  margin-bottom: 1rem; /* Set the desired bottom margin */
+  margin-bottom: 1rem;
 }
 
 .project-container p {
@@ -183,17 +182,17 @@ h2 {
 }
 
 .project-title {
-  margin-bottom: 1rem; /* Set the desired bottom margin */
+  margin-bottom: 1rem;
 }
 
 .project-details {
-  margin-bottom: 1rem; /* Set the desired bottom margin */
+  margin-bottom: 1rem;
 }
 
 .project-card {
   border-radius: 11px;
   padding: 20px;
-  margin: 10px auto;
+  margin: 10px;
   border: 1px solid black;
   text-decoration: none;
 }

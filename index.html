@@ -2,14 +2,19 @@
 <html lang="en">
   <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VGZ1DPYM4Y"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-VGZ1DPYM4Y"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-VGZ1DPYM4Y');
-</script>
+      gtag("config", "G-VGZ1DPYM4Y");
+    </script>
     <!-- End -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -93,11 +98,6 @@
           </div>
 
           <div class="cell">
-            <img src="images/python-logo.webp" alt="python logo" />
-            <span>Python</span>
-          </div>
-
-          <div class="cell">
             <img src="images/node-logo.webp" alt="nodejs logo" />
             <span>Node.js</span>
           </div>
@@ -113,7 +113,7 @@
       <div
         data-aos="fade-right"
         data-aos-duration="1000"
-        class="projects-container no-selection"
+        class="projects-container no-selection project01"
       >
         <a class="project-card" href="/the-mysterious-number.html">
           <div class="project-container">
@@ -128,6 +128,33 @@
               The aim of the game is to correctly guess a random number
               generated within the user's specified range. The user can also
               choose the number of attempts he/she wants to have.
+            </p>
+          </div>
+        </a>
+      </div>
+      <div
+        data-aos="fade-left"
+        data-aos-duration="1000"
+        class="projects-container no-selection project02"
+      >
+        <a
+          class="project-card"
+          href="https://wyn-nodejs-email-sender.onrender.com/"
+        >
+          <div class="project-container">
+            <img
+              src="images/email-sender.png"
+              alt="email sender"
+              class="project-pic"
+            />
+            <h3 class="project-title">Node.js Email Sender</h3>
+            <p class="project-details">
+              This application is built with Node.js, using the Express
+              framework and Nodemailer. Simply type in your name, your email
+              address, the subject of the email and the email's content. Click
+              "Send Email" and within seconds, an email will appear in your
+              inbox, and the subject and the content will be exactly how you
+              input it in the form!
             </p>
           </div>
         </a>
