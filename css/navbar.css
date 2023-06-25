@@ -45,6 +45,13 @@ nav .name-text {
   font-weight: 700;
 }
 
+nav .icon-image {
+  height: 35px;
+  width: auto;
+  margin-left: 25px;
+  vertical-align: middle;
+}
+
 nav .links {
   float: right;
   padding: 0;
