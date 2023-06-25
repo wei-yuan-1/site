@@ -2,18 +2,13 @@
 
 footer {
   background-color: #f3e9d3;
-  margin-top: 100px;
   width: 90%;
   padding: 15px 0px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
   border-radius: 15px;
-  margin-bottom: 25px;
+  margin: 100px auto 25px;
 }
 
 footer p {
