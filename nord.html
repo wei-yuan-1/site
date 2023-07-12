@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Redeem Your Free NordVPN Subscription! | Tang Dynasty X NordVPN
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html {
+        overflow: hidden;
+      }
+      body {
+        background-color: rgb(233, 246, 250);
+      }
+      * {
+        font-family: "Poppins", sans-serif;
+        font-size: 3.5vh;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+      }
+      .inputbox {
+        margin: 40vh auto;
+        width: 95%;
+        max-width: 95%;
+      }
+      input,
+      button {
+        border-radius: 0.75vw;
+        border: 0.25px solid black;
+      }
+      input {
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+      }
+      input:focus {
+        outline: none;
+      }
+      button {
+        padding: 0 75px;
+        background-color: rgb(238, 183, 183);
+        border: 3px dotted lightslategray;
+        cursor: pointer;
+      }
+      p {
+        font-weight: 600;
+        text-align: center;
+      }
+      .green-message {
+        color: #078255;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      .red-message {
+        color: #69042c;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="inputbox">
+      <label for="code">Enter your redemption code here:</label>
+      <br />
+      <input type="text" id="inputCode" placeholder="Redemption code" />
+      <br />
+      <button onclick="validateCode()">Submit</button>
+    </div>
+    <p id="message"></p>
+
+    <script>
+      function validateCode() {
+        var code = document.querySelector("#inputCode").value;
+        var messageElement = document.querySelector("#message");
+
+        if (
+          code == "VCH93-EUI92-4JF9S-9S4IF" ||
+          code == "DHG92-66HS4-GI3CC-SISW9" ||
+          code == "HW939-HE94V-FJ931-DIR45"
+        ) {
+          document.querySelector(".inputbox").style.display = "none";
+          messageElement.textContent =
+            "lol this was a prank. can't believe you fell for it :)";
+          messageElement.classList.add("green-message");
+          messageElement.classList.remove("red-message");
+        } else {
+          messageElement.textContent = "Invalid code...";
+          messageElement.classList.add("red-message");
+          messageElement.classList.remove("green-message");
+        }
+      }
+    </script>
+  </body>
+</html>
